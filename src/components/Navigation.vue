@@ -1,24 +1,11 @@
-<template>
-<div>
-    <RouterLink to="/" >
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
 
-    </RouterLink>
-</div>
-<div>
-    <li>
-        <RouterLink to="/">
-            Home Page
-        </RouterLink>
-    </li>
-    <li>
-        <RouterLink to="/expense">
-            Expense
-        </RouterLink>
-    </li>
-    <li>
-        <RouterLink to="/about">
-            About
-        </RouterLink>
-    </li>
-</div>
+<template>
+  <nav class="navbar navbar-expand bg-light border-bottom px-3 gap-3">
+    <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/expense">Expense</RouterLink>
+    <RouterLink to="/about">About</RouterLink>
+  </nav>
 </template>
